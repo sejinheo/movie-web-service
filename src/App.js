@@ -7,7 +7,7 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 
 function App() {
-  return <Router>
+  return <Router basename="/movie-web-service">
     <Routes>
     <Route path="/movie/:id" element={<Detail />} />
     <Route path="/" element={<Home />} />
